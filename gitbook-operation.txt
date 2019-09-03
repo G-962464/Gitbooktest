@@ -1,0 +1,13 @@
+gitbook serve
+cd _book
+
+git init
+git add *
+
+
+git commit -m '1'
+git remote add origin https://github.com/G-962464/.git
+git push -u origin master
+
+test.kmca.club
+itruscloud.kmca.club
