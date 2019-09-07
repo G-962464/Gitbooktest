@@ -143,7 +143,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
+                                <h1 id="&#x4E3B;&#x9875;">&#x4E3B;&#x9875;</h1>
+<hr>
+<ol>
+<li><p><strong>Tomcat &#x642D;&#x5EFA;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x6B65;&#x9AA4;</strong></p>
+<ul>
+<li>&#x65B9;&#x6CD5;1&#xFF1A;<blockquote>
+<ol>
+<li>&#x4FEE;&#x6539;<code>conf/web.xml</code>&#x6587;&#x4EF6;  </li>
+<li>&#x4FEE;&#x6539;<code>conf/server</code>&#x6587;&#x4EF6;</li>
+</ol>
+</blockquote>
+</li>
+<li><p>&#x65B9;&#x6CD5;2&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x540C;&#x4E0A;</li>
+<li>&#x5728;tomcat&#x5B89;&#x88C5;&#x76EE;&#x5F55;<code>\conf\Catalina\localhost</code>&#x4E0B;&#x5EFA;&#x7ACB;&#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x540D;&#xFF08;url&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#xFF09;xml&#x6587;&#x4EF6;(&#x591A;&#x4E2A;&#x65E2;&#x591A;&#x4E2A;&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;)&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>download.xml</code>&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ol>
+</blockquote>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;  
+&lt;Context  path=&quot;/do&quot; docBase=&quot;D://download&quot; crossContext=&quot;true&quot;&gt;&lt;/Context&gt;
+//path&#x4E3A;url&#x8BBF;&#x95EE;&#x8DEF;&#x5F84; docbase&#x4E3A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol>
+<li><strong>Nginx &#x4FEE;&#x6539;&#x4E3B;&#x9875;</strong><ul>
+<li>&#x65B9;&#x6CD5;1&#xFF1A;  <blockquote>
+<p><code>nginx root /usr/share/nginx/html/index.html</code></p>
+</blockquote>
+</li>
+<li>&#x65B9;&#x6CD5;2&#xFF1A;  <blockquote>
+<p><code>&#x4FEE;&#x6539;/etc/nginx/conf.d/nginx.conf</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol>
+<li><strong>Centos &#x7CFB;&#x7EDF;&#x5B89;&#x88C5;Nginx </strong></li>
+</ol>
+<blockquote>
+<p>cat /etc/redhat-release<br><code>sudo rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</code><br>yum repolist<br>yum  -y install nginx<br>systemctl enable nginx<br>systemctl start nginx<br>systemctl stop firewalld<br>curl -i localhost </p>
+</blockquote>
+<hr>
 
                                 
                                 </section>
@@ -179,7 +226,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-09-07T11:52:19.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-07T11:52:41.416Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-09-07T16:15:21.222Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-07T16:15:24.993Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
